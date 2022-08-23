@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html lang=en>
+<head>
+  <meta charset=utf-8>
+  <meta name=viewport content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  {{ if .IsHome }}
+  <title>jugo | Jonathan's Hugo Theme</title>
+  {{ else }}
+  <title>{{ $.Title }} | jugo</title>
+  {{ end }}
+  <meta name=description content="{{$.Description}}">
+  <link rel="stylesheet" href="/style.css">
+</head>
